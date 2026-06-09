@@ -71,28 +71,28 @@
 
       <div class="swiper-wrapper">
          <div class="box">
-            <img src="images/mithn.jpg" alt="">
+            <img src="images/sibro.jpeg" alt="">
 
-            <h2>Mohsenul Kabir Mithun</h2>
+            <h2>Yang Bro Rasakan</h2>
             <h3>ID: 2019-3-60-046</h3>
          </div>
 
          <div class="box">
-            <img src="images/sifat.jpg" alt="">
+            <img src="images/sibrop.png" alt="">
 
-            <h2>Kazi Sifat Al Maksud</h2>
+            <h2>Yang Bro Rasakan</h2>
             <h3>ID: 2019-3-60-050</h3>
          </div>
 
          <div class="box">
-            <img src="images/nijor.jpg" alt="">
-            <h2>Mujahidul Islam</h2>
+            <img src="images/sibrom.png" alt="">
+            <h2>Yang Bro Rasakan</h2>
             <h3>ID: 2019-2-60-076</h3>
          </div>
 
          <div class="box">
-            <img src="images/Niloy.jpg" alt="">
-            <h2>Md. Asif Imtiyaj Chowdhury</h2>
+            <img src="images/sibros.png" alt="">
+            <h2>Yang Bro Rasakan</h2>
             <h3>ID: 2019-3-60-115</h3>
          </div>
       </div>

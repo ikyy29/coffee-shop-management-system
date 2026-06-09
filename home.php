@@ -48,7 +48,7 @@
                <div class="content">
                   <span>order online</span>
                   <h3>Turmeric Spiced Coffee</h3>
-                  <a href="menu.html" class="btn">see menus</a>
+                  <a href="menu.php" class="btn">see menus</a>
                </div>
                <div class="image">
                   <img src="images/home-img-1.1.png" alt="">
@@ -59,7 +59,7 @@
                <div class="content">
                   <span>order online</span>
                   <h3>delicious pizza</h3>
-                  <a href="menu.html" class="btn">see menus</a>
+                  <a href="menu.php" class="btn">see menus</a>
                </div>
                <div class="image">
                   <img src="images/home-img-1.png" alt="">
@@ -70,7 +70,7 @@
                <div class="content">
                   <span>order online</span>
                   <h3>chezzy hamburger</h3>
-                  <a href="menu.html" class="btn">see menus</a>
+                  <a href="menu.php" class="btn">see menus</a>
                </div>
                <div class="image">
                   <img src="images/home-img-2.png" alt="">
@@ -81,7 +81,7 @@
                <div class="content">
                   <span>order online</span>
                   <h3>rosted chicken</h3>
-                  <a href="menu.html" class="btn">see menus</a>
+                  <a href="menu.php" class="btn">see menus</a>
                </div>
                <div class="image">
                   <img src="images/home-img-3.png" alt="">
@@ -188,7 +188,7 @@
       </div>
 
       <div class="more-btn">
-         <a href="menu.html" class="btn">veiw all</a>
+         <a href="menu.php" class="btn">view all</a>
       </div>
 
    </section>
@@ -231,7 +231,7 @@
       </div>
 
       <div class="more-btn">
-         <a href="product.php" class="btn">veiw all</a>
+         <a href="product.php" class="btn">view all</a>
       </div>
 
    </section>
@@ -273,7 +273,7 @@
       </div>
 
       <div class="more-btn">
-         <a href="product.php" class="btn">veiw all</a>
+         <a href="product.php" class="btn">view all</a>
       </div>
 
    </section>
@@ -315,7 +315,7 @@
       </div>
 
       <div class="more-btn">
-         <a href="product.php" class="btn">veiw all</a>
+         <a href="product.php" class="btn">view all</a>
       </div>
 
    </section>
@@ -333,7 +333,7 @@
          <div class="content">
             <h3>why choose us?</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, neque debitis incidunt qui ipsum sed doloremque a molestiae in veritatis ullam similique sunt aliquam dolores dolore? Quasi atque debitis nobis!</p>
-            <a href="menu.html" class="btn">our menu</a>
+            <a href="menu.php" class="btn">our menu</a>
          </div>
 
       </div>
