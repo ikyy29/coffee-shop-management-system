@@ -14,15 +14,15 @@ if (isset($_SESSION['user_id'])) {
 if (isset($_POST['submit'])) {
 
    $name = $_POST['name'];
-   $name = filter_var($name, FILTER_SANITIZE_STRING);
+   $name = filter_var($name, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
    $number = $_POST['number'];
-   $number = filter_var($number, FILTER_SANITIZE_STRING);
+   $number = filter_var($number, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
    $email = $_POST['email'];
-   $email = filter_var($email, FILTER_SANITIZE_STRING);
+   $email = filter_var($email, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
    $method = $_POST['method'];
-   $method = filter_var($method, FILTER_SANITIZE_STRING);
+   $method = filter_var($method, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
    $address = $_POST['address'];
-   $address = filter_var($address, FILTER_SANITIZE_STRING);
+   $address = filter_var($address, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
    $total_products = $_POST['total_products'];
    $total_price = $_POST['total_price'];
 

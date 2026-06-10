@@ -92,13 +92,13 @@ include 'components/add_cart.php';
 
    <section class="reviews">
 
-      <h1 class="title">main dish</h1>
+      <h1 class="title">fast food</h1>
 
       <div class="swiper reviews-slider">
 
          <div class="swiper-wrapper">
             <?php
-            $select_products = $conn->prepare("SELECT * FROM `products` where category='main dish'");
+            $select_products = $conn->prepare("SELECT * FROM `products` where category='fast food'");
             $select_products->execute();
             if ($select_products->rowCount() > 0) {
                while ($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)) {

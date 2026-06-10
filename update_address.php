@@ -14,7 +14,7 @@ if (isset($_SESSION['user_id'])) {
 if (isset($_POST['submit'])) {
 
    $address = $_POST['flat'] . ', ' . $_POST['building'] . ', ' . $_POST['area'] . ', ' . $_POST['town'] . ', ' . $_POST['city'] . ', ' . $_POST['state'] . ', ' . $_POST['country'] . ' - ' . $_POST['pin_code'];
-   $address = filter_var($address, FILTER_SANITIZE_STRING);
+   $address = filter_var($address, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
    $update_address = $conn->prepare("UPDATE `users` set address = ? WHERE id = ?");
    $update_address->execute([$address, $user_id]);
