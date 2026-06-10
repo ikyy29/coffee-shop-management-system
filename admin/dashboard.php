@@ -86,6 +86,15 @@ $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
                 </li>
 
                 <li>
+                    <a href="reservations.php">
+                        <span class="icon">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </span>
+                        <span class="title">reservations</span>
+                    </a>
+                </li>
+
+                <li>
                     <a href="admin_accounts.php">
                         <span class="icon">
                             <ion-icon name="accessibility-outline"></ion-icon>
@@ -302,6 +311,24 @@ $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
                         <div class="iconBx">
                             <a href="messages.php">
                                 <ion-icon name="chatbubble-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <?php
+                        $select_reservations = $conn->prepare("SELECT * FROM `reservations` WHERE status = ?");
+                        $select_reservations->execute(['pending']);
+                        $numbers_of_reservations = $select_reservations->rowCount();
+                        ?>
+                        <div>
+                            <div class="numbers"><?= $numbers_of_reservations; ?></div>
+                            <div class="cardName">pending reservations</div>
+                        </div>
+
+                        <div class="iconBx">
+                            <a href="reservations.php">
+                                <ion-icon name="calendar-outline"></ion-icon>
                             </a>
                         </div>
                     </div>

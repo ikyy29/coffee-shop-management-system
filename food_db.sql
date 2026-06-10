@@ -1,4 +1,4 @@
-food_dbfood_db-- phpMyAdmin SQL Dump
+-- phpMyAdmin SQL Dump
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
@@ -165,22 +165,22 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `category`, `price`, `image`, `popularity`, `disprice`, `desc`) VALUES
-(11, 'Cappuccino', 'coffee', 200, 'cappuccino-1659544996.png', 10, NULL, NULL),
-(12, 'Cortado', 'coffee', 20, 'cortado-1659544996.webp', NULL, NULL, NULL),
-(13, 'Latte', 'coffee', 20, 'latte-1659544996.webp', NULL, NULL, NULL),
-(14, 'Red Eye', 'coffee', 20, 'red-eye-1659544996.webp', NULL, NULL, NULL),
-(15, 'Mocha', 'coffee', 20, 'mocha-1659544996.webp', NULL, NULL, NULL),
-(16, 'Raf', 'coffee', 20, 'raf-1659544996.webp', NULL, NULL, NULL),
-(17, 'Macchiato', 'coffee', 20, 'macchiato-1659544996.webp', 8, NULL, NULL),
-(18, 'Cold Brew', 'coffee', 20, 'cold-brew-1659544996.webp', NULL, NULL, NULL),
-(19, 'Espresso Con Panna', 'coffee', 20, 'espresso-con-panna-1659544996.webp', 5, NULL, NULL),
-(20, 'Café Cubano', 'coffee', 20, 'cafe-cubano-1659544996.webp', NULL, NULL, NULL),
-(21, 'Espresso Romano', 'coffee', 20, 'espresso-romano-1659544996.webp', NULL, NULL, NULL),
-(22, 'Long Black', 'coffee', 20, 'long-black-1659544996.webp', 6, NULL, NULL),
-(23, 'Caffè Breve', 'coffee', 20, 'caffe-breve-1659544996.webp', NULL, NULL, NULL),
-(24, 'Affogato', 'coffee', 20, 'affogato-1659544996.webp', NULL, NULL, NULL),
-(25, 'Quad shots', 'coffee', 20, 'quad-shots-1659544996.webp', NULL, NULL, NULL),
-(26, 'Mexican coffee', 'coffee', 20, 'mexican-coffee-1659544996.webp', NULL, NULL, NULL);
+(11, 'Cappuccino', 'coffee', 25000, 'cappuccino-1659544996.png', 10, NULL, NULL),
+(12, 'Cortado', 'coffee', 20000, 'cortado-1659544996.webp', NULL, NULL, NULL),
+(13, 'Latte', 'coffee', 22000, 'latte-1659544996.webp', NULL, NULL, NULL),
+(14, 'Red Eye', 'coffee', 24000, 'red-eye-1659544996.webp', NULL, NULL, NULL),
+(15, 'Mocha', 'coffee', 25000, 'mocha-1659544996.webp', NULL, NULL, NULL),
+(16, 'Raf', 'coffee', 23000, 'raf-1659544996.webp', NULL, NULL, NULL),
+(17, 'Macchiato', 'coffee', 20000, 'macchiato-1659544996.webp', 8, NULL, NULL),
+(18, 'Cold Brew', 'coffee', 18000, 'cold-brew-1659544996.webp', NULL, NULL, NULL),
+(19, 'Espresso Con Panna', 'coffee', 20000, 'espresso-con-panna-1659544996.webp', 5, NULL, NULL),
+(20, 'Café Cubano', 'coffee', 22000, 'cafe-cubano-1659544996.webp', NULL, NULL, NULL),
+(21, 'Espresso Romano', 'coffee', 22000, 'espresso-romano-1659544996.webp', NULL, NULL, NULL),
+(22, 'Long Black', 'coffee', 18000, 'long-black-1659544996.webp', 6, NULL, NULL),
+(23, 'Caffè Breve', 'coffee', 25000, 'caffe-breve-1659544996.webp', NULL, NULL, NULL),
+(24, 'Affogato', 'coffee', 28000, 'affogato-1659544996.webp', NULL, NULL, NULL),
+(25, 'Quad shots', 'coffee', 25000, 'quad-shots-1659544996.webp', NULL, NULL, NULL),
+(26, 'Mexican coffee', 'coffee', 24000, 'mexican-coffee-1659544996.webp', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 

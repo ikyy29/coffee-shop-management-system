@@ -68,7 +68,6 @@ if (isset($_GET['delete'])) {
       <div>
          <table class="table">
             <thead>
-               <tr>
                   <th>ID</th>
                   <th>Date</th>
                   <th>Name</th>
@@ -77,6 +76,7 @@ if (isset($_GET['delete'])) {
                   <th>Address</th>
                   <th>products</th>
                   <th>Price</th>
+                  <th>Estimasi</th>
                   <th>PaymentType</th>
                   <th>Action</th>
                </tr>
@@ -88,7 +88,6 @@ if (isset($_GET['delete'])) {
                if ($select_orders->rowCount() > 0) {
                   while ($fetch_orders = $select_orders->fetch(PDO::FETCH_ASSOC)) {
                ?>
-                     <tr>
                         <td><?= $fetch_orders['user_id']; ?></td>
                         <td><?= $fetch_orders['placed_on']; ?></td>
                         <td><?= $fetch_orders['name']; ?></td>
@@ -96,7 +95,8 @@ if (isset($_GET['delete'])) {
                         <td><?= $fetch_orders['number']; ?></span></td>
                         <td><?= $fetch_orders['address']; ?></td>
                         <td><?= $fetch_orders['total_products']; ?></td>
-                        <td><?= $fetch_orders['total_price']; ?></td>
+                        <td>Rp. <?= $fetch_orders['total_price']; ?></td>
+                        <td style="color:red; font-weight:bold;"><?= isset($fetch_orders['estimated_ready_time']) && $fetch_orders['estimated_ready_time'] ? date('H:i', strtotime($fetch_orders['estimated_ready_time'])) : '-'; ?></td>
                         <td><?= $fetch_orders['method']; ?></td>
                         <td>
                            <form action="" method="POST">

@@ -35,8 +35,31 @@ if (isset($_POST['submit'])) {
          $message[] = 'please add your address!';
       } else {
 
-         $insert_order = $conn->prepare("INSERT INTO `orders`(user_id, name, number, email, method, address, total_products, total_price) VALUES(?,?,?,?,?,?,?,?)");
-         $insert_order->execute([$user_id, $name, $number, $email, $method, $address, $total_products, $total_price]);
+         // Calculate estimated time
+         $estimated_minutes = 0;
+         while ($fetch_cart = $check_cart->fetch(PDO::FETCH_ASSOC)) {
+            $get_cat = $conn->prepare("SELECT category FROM `products` WHERE id = ?");
+            $get_cat->execute([$fetch_cart['pid']]);
+            $fetch_cat = $get_cat->fetch(PDO::FETCH_ASSOC);
+            $cat = strtolower($fetch_cat['category']);
+            
+            $item_time = 5; // default untuk coffee
+            if (strpos($cat, 'main dish') !== false || strpos($cat, 'food') !== false) {
+               $item_time = 15;
+            } elseif (strpos($cat, 'drink') !== false) {
+               $item_time = 3;
+            } elseif (strpos($cat, 'dessert') !== false) {
+               $item_time = 10;
+            }
+            $estimated_minutes += ($item_time * $fetch_cart['quantity']);
+         }
+         
+         date_default_timezone_set('Asia/Jakarta');
+         $order_time = date('Y-m-d H:i:s');
+         $estimated_ready_time = date('Y-m-d H:i:s', strtotime("+$estimated_minutes minutes"));
+
+         $insert_order = $conn->prepare("INSERT INTO `orders`(user_id, name, number, email, method, address, total_products, total_price, order_time, estimated_ready_time) VALUES(?,?,?,?,?,?,?,?,?,?)");
+         $insert_order->execute([$user_id, $name, $number, $email, $method, $address, $total_products, $total_price, $order_time, $estimated_ready_time]);
 
          $delete_cart = $conn->prepare("DELETE FROM `cart` WHERE user_id = ?");
          $delete_cart->execute([$user_id]);

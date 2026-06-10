@@ -99,21 +99,25 @@
    <!-- booking Area -->
 
    <section class="booking">
-      <h1 class="title"> COFFEE BUILD YOUR BASE</h1>
-
-
-      <div class="bookinput">
-         <input type="text" value=" 1 person">
-         <label for="for">
-            <h3>FOR</h3>
-         </label>
-         <input type="date">
-         <label for="at">
-            <h3 class="p-2">AT</h3>
-         </label>
-         <input type="time" value="7.00pm">
-         <input type="submit" class="btn" value="BOOK A TABLE">
-      </div>
+      <h1 class="title">RESERVASI MEJA KAFE</h1>
+      
+      <form action="book_table.php" method="POST" class="bookinput" style="display:flex; flex-wrap:wrap; justify-content:center; gap: 1rem; align-items:center;">
+         <select name="guests" required style="padding:1rem; font-size:1.6rem; border:var(--border); border-radius:.5rem;">
+            <option value="" disabled selected>Jumlah Orang</option>
+            <option value="1 Person">1 Person</option>
+            <option value="2 People">2 People</option>
+            <option value="3 People">3 People</option>
+            <option value="4+ People">4+ People</option>
+         </select>
+         
+         <label for="date"><h3 style="font-size: 2rem; color: var(--white); background: var(--main-color); padding: .5rem 1rem; border-radius: .5rem; margin: 0 1rem;">PADA</h3></label>
+         <input type="date" name="book_date" required style="padding:1rem; font-size:1.6rem; border:var(--border); border-radius:.5rem;">
+         
+         <label for="time"><h3 style="font-size: 2rem; color: var(--white); background: var(--main-color); padding: .5rem 1rem; border-radius: .5rem; margin: 0 1rem;">JAM</h3></label>
+         <input type="time" name="book_time" required style="padding:1rem; font-size:1.6rem; border:var(--border); border-radius:.5rem;">
+         
+         <input type="submit" name="book_table" class="btn" value="PESAN MEJA">
+      </form>
    </section>
 
    <!-- category Area -->
