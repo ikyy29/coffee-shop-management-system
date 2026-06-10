@@ -120,7 +120,7 @@
 
    <section class="category">
 
-      <h1 class="title">food category</h1>
+      <h1 class="title">category</h1>
 
       <div class="box-container">
 
@@ -129,9 +129,9 @@
             <h3>Coffee</h3>
          </a>
 
-         <a href="category.php?category=main dish" class="box">
+         <a href="category.php?category=fast food" class="box">
             <img src="images/cat-2.png" alt="">
-            <h3>Special dishes</h3>
+            <h3>Fast food</h3>
          </a>
 
          <a href="category.php?category=drinks" class="box">
@@ -231,7 +231,7 @@
       </div>
 
       <div class="more-btn">
-         <a href="product.php" class="btn">view all</a>
+         <a href="menu.php" class="btn">view all</a>
       </div>
 
    </section>
@@ -273,7 +273,7 @@
       </div>
 
       <div class="more-btn">
-         <a href="product.php" class="btn">view all</a>
+         <a href="menu.php" class="btn">view all</a>
       </div>
 
    </section>
@@ -315,7 +315,7 @@
       </div>
 
       <div class="more-btn">
-         <a href="product.php" class="btn">view all</a>
+         <a href="menu.php" class="btn">view all</a>
       </div>
 
    </section>
