@@ -115,7 +115,7 @@
             <br>
             <br>
             <p> For over two decades, our family has used coffee as a catalyst for inspiring community, relationships, and adventures. We dedicate ourselves to the quality of our work and elevating coffee experiences. </p>
-            <a href="menu.html" class="btn">our menu</a>
+            <a href="menu.php" class="btn">our menu</a>
          </div>
 
       </div>
