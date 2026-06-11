@@ -391,7 +391,7 @@
       <div class="row">
 
          <div class="map">
-            <iframe class="minmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4416.875576819757!2d90.42337781534498!3d23.76838889400504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c78bc678693d%3A0x3e87f7b866c0e38!2sEast%20West%20University!5e1!3m2!1sen!2sbd!4v1660587920897!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d986.2742471702483!2d116.09724744972648!3d-8.586673155950585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdc1aa1e51c81d%3A0xfd011b0eab2bba9e!2sGedung%20Arsitektur%20%2F%20Teknik%20Informatika!5e0!3m2!1sid!2sid!4v1781140306604!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
          </div>
 
          <form action="" method="post">

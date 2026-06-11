@@ -13,7 +13,7 @@
        </div>
 
        <div class="box">
-          <h3> Cafe Shop <i class="fas fa-shopping-basket"></i> </h3>
+          <h3> Coffee Shop <i class="fas fa-shopping-basket"></i> </h3>
           <div class="share">
              <a href="#" class="fab fa-facebook-f"></a>
              <a href="#" class="fab fa-twitter"></a>
@@ -26,7 +26,7 @@
 
           <h3>Opening Hours</h3>
           <div class="dateinfo">
-             <p>MONDAY </p> <samp>CLOSED</samp>
+             <p>MONDAY </p> <samp>9.00 - 22.00</samp>
           </div>
           <div class="dateinfo">
              <p>TUESDAY </p> <samp>9.00 - 22.00</samp>
@@ -41,10 +41,10 @@
              <p>FRIDAY </p> <samp>9.00 - 22.00</samp>
           </div>
           <div class="dateinfo">
-             <p>SATURDAY </p> <samp>9.00 - 22.00</samp>
+             <p>SATURDAY </p> <samp>10.00 - 02.00</samp>
           </div>
           <div class="dateinfo">
-             <p>SUNDAY </p><samp>*10.00 - 20.00</samp>
+             <p>SUNDAY </p><samp>10.00 - 02.00</samp>
           </div>
 
 
@@ -61,7 +61,7 @@
           <div class="phone1">
              <h3>Branch Location</h3>
 
-             <p> <i class="fas fa-map-marker-alt"></i> Jahurul Islam City Gate, A/2 Jahurul Islam Ave, Dhaka 1212 </p>
+             <p> <i class="fas fa-map-marker-alt"></i> Gedung Teknik Informatika, Universitas Mataram, Jl. Majapahit, Kota Mataram, NTB 83115 </p>
              <p> <i class="fas fa-envelope"></i> cafe.shop@gmail.com </p>
           </div>
        </div>

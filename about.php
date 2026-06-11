@@ -42,26 +42,6 @@
       <p><a href="home.php">Home</a> <span> / About</span></p>
    </div>
 
-   <!-- Our Ower -->
-   <section class="card">
-
-      <img src="images/nisatmam.jpg" class="card-img" alt="...">
-
-      <div class="doc">
-         <h3 class="title">Our Owner</h3>
-         <br>
-         <p> <b>Nishat Tasnim Niloy</b></p>
-         <p> Lecturer, <br> Department of Computer Science & Engineering
-            <br>
-            <b>Office: </b> Room-368<br> <b> Email: </b> nishat.niloy@ewubd.edu
-         </p>
-         <br>
-         <br>
-         <a href="https://www.linkedin.com/in/niloynishat/?originalSubdomain=bd" target="_blank" class="btn">Learn More</a>
-      </div>
-
-   </section>
-
    <!-- Our Team -->
 
 
@@ -71,29 +51,29 @@
 
       <div class="swiper-wrapper">
          <div class="box">
-            <img src="images/sibro.jpeg" alt="">
+            <img src="images/alya.jpeg" alt="">
 
-            <h2>Yang Bro Rasakan</h2>
-            <h3>ID: 2019-3-60-046</h3>
+            <h2>Alya Rasyida Putri</h2>
+            <h3>F1D2410002</h3>
          </div>
 
          <div class="box">
             <img src="images/sibrop.png" alt="">
 
-            <h2>Yang Bro Rasakan</h2>
-            <h3>ID: 2019-3-60-050</h3>
+            <h2>I Made Priyandika Adiyatma PS</h2>
+            <h3>F1D02410008</h3>
          </div>
 
          <div class="box">
             <img src="images/sibrom.png" alt="">
-            <h2>Yang Bro Rasakan</h2>
-            <h3>ID: 2019-2-60-076</h3>
+            <h2>Muhammad Rizky Hisyam</h2>
+            <h3>F1D2410018</h3>
          </div>
 
          <div class="box">
             <img src="images/sibros.png" alt="">
-            <h2>Yang Bro Rasakan</h2>
-            <h3>ID: 2019-3-60-115</h3>
+            <h2>Revano Januar Adiguna Prawira</h2>
+            <h3>F1D2410146</h3>
          </div>
       </div>
 
