@@ -32,13 +32,13 @@ if (isset($_POST['get_recommendation'])) {
       $search_keyword = 'tidak_ditemukan'; 
    }
 
-   // Pertama, kita coba cari berdasarkan keyword spesifik
-   $get_cheap = $conn->prepare("SELECT * FROM `products` WHERE name LIKE ? ORDER BY price ASC LIMIT 1");
-   $get_cheap->execute(["%$search_keyword%"]);
+   // Pertama, kita coba cari berdasarkan keyword spesifik, tetapi HANYA dalam kategori yang dipilih
+   $get_cheap = $conn->prepare("SELECT * FROM `products` WHERE category = ? AND name LIKE ? ORDER BY price ASC LIMIT 1");
+   $get_cheap->execute([$category, "%$search_keyword%"]);
    $cheap_product = $get_cheap->fetch(PDO::FETCH_ASSOC);
 
-   $get_exp = $conn->prepare("SELECT * FROM `products` WHERE name LIKE ? ORDER BY price DESC LIMIT 1");
-   $get_exp->execute(["%$search_keyword%"]);
+   $get_exp = $conn->prepare("SELECT * FROM `products` WHERE category = ? AND name LIKE ? ORDER BY price DESC LIMIT 1");
+   $get_exp->execute([$category, "%$search_keyword%"]);
    $exp_product = $get_exp->fetch(PDO::FETCH_ASSOC);
 
    // Jika keyword tidak ditemukan, kita jadikan fallback untuk merekomendasikan 

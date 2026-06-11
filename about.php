@@ -58,20 +58,20 @@
          </div>
 
          <div class="box">
-            <img src="images/sibrop.png" alt="">
+            <img src="images/dika.jpeg" alt="">
 
             <h2>I Made Priyandika Adiyatma PS</h2>
             <h3>F1D02410008</h3>
          </div>
 
          <div class="box">
-            <img src="images/sibrom.png" alt="">
+            <img src="images/ikyy.jpeg" alt="">
             <h2>Muhammad Rizky Hisyam</h2>
             <h3>F1D2410018</h3>
          </div>
 
          <div class="box">
-            <img src="images/sibros.png" alt="">
+            <img src="images/vano.jpeg" alt="">
             <h2>Revano Januar Adiguna Prawira</h2>
             <h3>F1D2410146</h3>
          </div>
