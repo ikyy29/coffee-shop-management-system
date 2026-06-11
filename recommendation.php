@@ -20,44 +20,16 @@ if (isset($_POST['get_recommendation'])) {
 
    $search_keyword = '';
 
-   // Logika per Kategori Menu
-   if ($category == 'coffee') {
-      // 1. Kategori Kopi (Data Tersedia)
-      if ($taste == 'strong') {
-         $search_keyword = 'espresso';
-      } elseif ($taste == 'sweet') {
-         $search_keyword = 'mocha';
-      } else {
-         $search_keyword = 'latte';
-      }
-
-   } elseif ($category == 'main_dish') {
-      // 2. Kategori Main Dish (Template Placeholder)
-      if ($taste == 'strong') {
-         $search_keyword = 'steak'; // Contoh hidangan berat/gurih
-      } elseif ($taste == 'sweet') {
-         $search_keyword = 'pancake'; // Contoh hidangan manis
-      } else {
-         $search_keyword = 'nasi'; // Default main dish
-      }
-
-   } elseif ($category == 'drinks') {
-      // 3. Kategori Minuman Non-Kopi (Template Placeholder)
-      if ($taste == 'sweet') {
-         $search_keyword = 'milkshake';
-      } elseif ($taste == 'fresh') {
-         $search_keyword = 'lemon'; // Contoh Lemon Tea / Mojito
-      } else {
-         $search_keyword = 'tea'; // Default minuman
-      }
-
-   } elseif ($category == 'desserts') {
-      // 4. Kategori Dessert (Template Placeholder)
-      if ($taste == 'sweet') {
-         $search_keyword = 'cake'; // Contoh hidangan kue manis
-      } else {
-         $search_keyword = 'pudding'; // Contoh dessert ringan
-      }
+   // Ambil kata kunci dari database berdasarkan kategori dan rasa
+   $get_rule = $conn->prepare("SELECT keyword FROM `recommendation_rules` WHERE category = ? AND taste = ?");
+   $get_rule->execute([$category, $taste]);
+   
+   if ($get_rule->rowCount() > 0) {
+      $fetch_rule = $get_rule->fetch(PDO::FETCH_ASSOC);
+      $search_keyword = $fetch_rule['keyword'];
+   } else {
+      // Fallback keyword jika tidak ada aturan yang cocok
+      $search_keyword = 'tidak_ditemukan'; 
    }
 
    // Pertama, kita coba cari berdasarkan keyword spesifik
@@ -129,10 +101,10 @@ if (isset($_POST['get_recommendation'])) {
       <form action="" method="POST">
          <select name="category" id="category_select" required>
             <option value="" disabled selected>Pilih Kategori Menu</option>
-            <option value="coffee">Coffee (Kopi)</option>
-            <option value="main_dish">Main Dish (Makanan Utama)</option>
-            <option value="drinks">Drinks (Minuman Segar)</option>
-            <option value="desserts">Desserts (Pencuci Mulut)</option>
+            <option value="coffee">Coffee</option>
+            <option value="fast food">Fast Food</option>
+            <option value="drinks">Drinks</option>
+            <option value="desserts">Desserts</option>
          </select>
          
          <select name="taste" id="taste_select" required>
@@ -194,7 +166,7 @@ if (isset($_POST['get_recommendation'])) {
             {value: 'strong', text: 'Kuat / Pahit Bikin Melek (Espresso)'},
             {value: 'balanced', text: 'Seimbang (Latte / Cappuccino)'}
          ],
-         'main_dish': [
+         'fast food': [
             {value: 'strong', text: 'Gurih / Asin (Savory Dish)'},
             {value: 'sweet', text: 'Manis (Sweet Dish)'}
          ],

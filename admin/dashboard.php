@@ -93,6 +93,15 @@ $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
                         <span class="title">reservations</span>
                     </a>
                 </li>
+                
+                <li>
+                    <a href="recommendations.php">
+                        <span class="icon">
+                            <ion-icon name="star-outline"></ion-icon>
+                        </span>
+                        <span class="title">recommendations</span>
+                    </a>
+                </li>
 
                 <li>
                     <a href="admin_accounts.php">
