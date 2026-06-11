@@ -175,7 +175,7 @@ $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
                         }
                         ?>
                         <div>
-                            <div class="numbers"><span>$</span><?= $total_pendings; ?><span>/-</span></div>
+                            <div class="numbers"><span>Rp. </span><?= $total_pendings; ?><span>/-</span></div>
                             <div class="cardName">total pendings</div>
                         </div>
 
@@ -196,7 +196,7 @@ $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
                         }
                         ?>
                         <div>
-                            <div class="numbers"><span>$</span><?= $total_completes; ?><span>/-</span></div>
+                            <div class="numbers"><span>Rp. </span><?= $total_completes; ?><span>/-</span></div>
                             <div class="cardName">total completes</div>
                         </div>
 
@@ -214,7 +214,7 @@ $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
                         $numbers_of_orders = $select_orders->rowCount();
                         ?>
                         <div>
-                            <div class="numbers"><span>$</span><?= $total_completes + $total_pendings; ?><span>/-</span></div>
+                            <div class="numbers"><span>Rp. </span><?= $total_completes + $total_pendings; ?><span>/-</span></div>
                             <div class="cardName">total orders</div>
                         </div>
 

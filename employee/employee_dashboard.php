@@ -83,7 +83,7 @@ if (!isset($employee_id)) {
                }
                ?>
                <div>
-                  <div class="numbers"><span>$</span><?= $total_pendings; ?><span>/-</span></div>
+                  <div class="numbers"><span>Rp. </span><?= $total_pendings; ?><span>/-</span></div>
                   <div class="cardName">total pendings</div>
                </div>
 
@@ -104,7 +104,7 @@ if (!isset($employee_id)) {
                }
                ?>
                <div>
-                  <div class="numbers"><span>$</span><?= $total_completes; ?><span>/-</span></div>
+                  <div class="numbers"><span>Rp. </span><?= $total_completes; ?><span>/-</span></div>
                   <div class="cardName">total completes</div>
                </div>
 
@@ -122,7 +122,7 @@ if (!isset($employee_id)) {
                $numbers_of_orders = $select_orders->rowCount();
                ?>
                <div>
-                  <div class="numbers"><span>$</span><?= $total_completes + $total_pendings; ?><span>/-</span></div>
+                  <div class="numbers"><span>Rp. </span><?= $total_completes + $total_pendings; ?><span>/-</span></div>
                   <div class="cardName">total orders</div>
                </div>
 

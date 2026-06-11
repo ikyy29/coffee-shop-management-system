@@ -143,7 +143,7 @@ if (isset($_GET['delete'])) {
                         <td><?= $fetch_products['id']; ?></td>
                         <td><img style="height: 60px;" src="../uploaded_img/<?= $fetch_products['image']; ?>" alt=""></td>
                         <td><?= $fetch_products['name']; ?></td>
-                        <td><span>$</span><?= $fetch_products['price']; ?><span></td>
+                        <td><span>Rp. </span><?= $fetch_products['price']; ?><span></td>
                         <td><?= $fetch_products['category']; ?></td>
 
 

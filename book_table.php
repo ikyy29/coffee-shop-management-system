@@ -14,12 +14,16 @@ if (isset($_SESSION['user_id'])) {
 
 if (isset($_POST['book_table'])) {
 
-   $guests = $_POST['guests'];
-   $guests = filter_var($guests, FILTER_SANITIZE_STRING);
-   $reserve_date = $_POST['reserve_date'];
-   $reserve_date = filter_var($reserve_date, FILTER_SANITIZE_STRING);
-   $reserve_time = $_POST['reserve_time'];
-   $reserve_time = filter_var($reserve_time, FILTER_SANITIZE_STRING);
+   // 1. FIX: Mengambil hanya angka untuk mencegah error "Data truncated"
+   $guests = $_POST['guests'] ?? '';
+   $guests = filter_var($guests, FILTER_SANITIZE_NUMBER_INT);
+
+   // 2. FIX: Mengganti fungsi deprecated dan menambah fallback '??' jika input kosong
+   $reserve_date = $_POST['reserve_date'] ?? '';
+   $reserve_date = filter_var($reserve_date, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+   
+   $reserve_time = $_POST['reserve_time'] ?? '';
+   $reserve_time = filter_var($reserve_time, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
    // Get user name
    $select_user = $conn->prepare("SELECT name FROM `users` WHERE id = ?");
@@ -27,6 +31,7 @@ if (isset($_POST['book_table'])) {
    $fetch_user = $select_user->fetch(PDO::FETCH_ASSOC);
    $name = $fetch_user['name'];
 
+   // Insert ke database
    $insert_reservation = $conn->prepare("INSERT INTO `reservations`(user_id, name, guests, reserve_date, reserve_time) VALUES(?,?,?,?,?)");
    $insert_reservation->execute([$user_id, $name, $guests, $reserve_date, $reserve_time]);
 

@@ -71,7 +71,7 @@
 
     </section>
 
-    <div class="credit">&copy; copyright @ <?= date('Y'); ?> by <span></span> | <a>Summer-2022 CSE347(3) (Group:2)</a> | all rights reserved!</div>
+    <div class="credit">&copy; copyright @ <?= date('Y'); ?> by <span></span> | <a>RPL Mania</a> | all rights reserved!</div>
 
  </footer>
 

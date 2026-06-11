@@ -104,17 +104,17 @@
       <form action="book_table.php" method="POST" class="bookinput" style="display:flex; flex-wrap:wrap; justify-content:center; gap: 1rem; align-items:center;">
          <select name="guests" required style="padding:1rem; font-size:1.6rem; border:var(--border); border-radius:.5rem;">
             <option value="" disabled selected>Jumlah Orang</option>
-            <option value="1 Person">1 Person</option>
-            <option value="2 People">2 People</option>
-            <option value="3 People">3 People</option>
-            <option value="4+ People">4+ People</option>
+            <option value="1">1 Person</option>
+            <option value="2">2 People</option>
+            <option value="3">3 People</option>
+            <option value="4">4+ People</option>
          </select>
          
          <label for="date"><h3 style="font-size: 2rem; color: var(--white); background: var(--main-color); padding: .5rem 1rem; border-radius: .5rem; margin: 0 1rem;">PADA</h3></label>
-         <input type="date" name="book_date" required style="padding:1rem; font-size:1.6rem; border:var(--border); border-radius:.5rem;">
+         <input type="date" name="reserve_date" required style="padding:1rem; font-size:1.6rem; border:var(--border); border-radius:.5rem;">
          
          <label for="time"><h3 style="font-size: 2rem; color: var(--white); background: var(--main-color); padding: .5rem 1rem; border-radius: .5rem; margin: 0 1rem;">JAM</h3></label>
-         <input type="time" name="book_time" required style="padding:1rem; font-size:1.6rem; border:var(--border); border-radius:.5rem;">
+         <input type="time" name="reserve_time" required style="padding:1rem; font-size:1.6rem; border:var(--border); border-radius:.5rem;">
          
          <input type="submit" name="book_table" class="btn" value="PESAN MEJA">
       </form>
@@ -178,7 +178,7 @@
                   <a href="category.php?category=<?= $fetch_products['category']; ?>" class="cat"><?= $fetch_products['category']; ?></a>
                   <div class="name"><?= $fetch_products['name']; ?></div>
                   <div class="flex">
-                     <div class="price"><span>$</span><?= $fetch_products['price']; ?></div>
+                     <div class="price"><span>Rp. </span><?= $fetch_products['price']; ?></div>
                      <input type="number" name="qty" class="qty" min="1" max="99" value="1" maxlength="2">
                   </div>
                </form>
@@ -221,7 +221,7 @@
                   <a href="category.php?category=<?= $fetch_products['category']; ?>" class="cat"><?= $fetch_products['category']; ?></a>
                   <div class="name"><?= $fetch_products['name']; ?></div>
                   <div class="flex">
-                     <div class="price"><span>$</span><?= $fetch_products['price']; ?></div>
+                     <div class="price"><span>Rp. </span><?= $fetch_products['price']; ?></div>
                      <input type="number" name="qty" class="qty" min="1" max="99" value="1" maxlength="2">
                   </div>
                </form>
@@ -263,7 +263,7 @@
                   <a href="category.php?category=<?= $fetch_products['category']; ?>" class="cat"><?= $fetch_products['category']; ?></a>
                   <div class="name"><?= $fetch_products['name']; ?></div>
                   <div class="flex">
-                     <div class="price"><span>$</span><?= $fetch_products['price']; ?></div>
+                     <div class="price"><span>Rp. </span><?= $fetch_products['price']; ?></div>
                      <input type="number" name="qty" class="qty" min="1" max="99" value="1" maxlength="2">
                   </div>
                </form>
@@ -305,7 +305,7 @@
                   <a href="category.php?category=<?= $fetch_products['category']; ?>" class="cat"><?= $fetch_products['category']; ?></a>
                   <div class="name"><?= $fetch_products['name']; ?></div>
                   <div class="flex">
-                     <div class="price"><span>$</span><?= $fetch_products['price']; ?></div>
+                     <div class="price"><span>Rp. </span><?= $fetch_products['price']; ?></div>
                      <input type="number" name="qty" class="qty" min="1" max="99" value="1" maxlength="2">
                   </div>
                </form>

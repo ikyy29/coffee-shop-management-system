@@ -10,8 +10,8 @@ $files = glob("*.php");
 foreach ($files as $file) {
     $content = file_get_contents($file);
     
-    // Replace <span>$</span> with <span>Rp. </span>
-    $new_content = str_replace('<span>$</span>', '<span>Rp. </span>', $content);
+    // Replace <span>Rp. </span> with <span>Rp. </span>
+    $new_content = str_replace('<span>Rp. </span>', '<span>Rp. </span>', $content);
     
     // Replace specific formats like $10/- to Rp. 10
     $new_content = str_replace('$<?= $fetch_orders[\'total_price\']; ?>/-', 'Rp. <?= $fetch_orders[\'total_price\']; ?>', $new_content);
